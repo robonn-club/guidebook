@@ -1,0 +1,93 @@
+site_name: Mobile Robotics Guidebook
+site_url: https://robonn-uni-club.github.io/mobile-robotics-guidebook
+site_description: A practitioner-focused guide to mobile robotics, maintained by Robonn — the Robotics Club at Universität Bonn.
+repo_url: https://github.com/robonn-uni-club/mobile-robotics-guidebook
+repo_name: robonn-uni-club/mobile-robotics-guidebook
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  logo: assets/robonn_logo.png
+  favicon: assets/robonn_logo.png
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.prune
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - assets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Courses:
+      - courses/README.md
+      - Math & Probability: courses/1_math_and_probability/README.md
+      - Python for Robotics: courses/2_python/README.md
+      - Sensor & Motion Models: courses/3_sensor_motion_models/README.md
+      - State Estimation: courses/4_state_estimation/README.md
+      - Localization: courses/5_localization/README.md
+      - Mapping: courses/6_mapping/README.md
+      - Control & Planning: courses/11_control_and_planning/README.md
+      - Computer Vision: courses/8_computer_vision/README.md
+      - Inertial Navigation: courses/9_inertial_navigation/README.md
+      - Global Navigation Satellite Systems: courses/10_global_navigation/README.md
+      - SLAM: courses/7_slam/README.md
+      - Machine Learning: courses/12_machine_learning/README.md
+      - C++ for Robotics: courses/13_cpp/README.md
