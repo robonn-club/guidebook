@@ -2,7 +2,7 @@
 
 A practitioner-focused guide to mobile robotics, maintained by [Robonn](https://robonn.de) — the Robotics Club at Universität Bonn.
 
-**[Website](https://robonn-uni-club.github.io/mobile-robotics-guidebook)**
+**[Website](https://robonn-club.github.io/guidebook)**
 
 ## Topics
 

@@ -15,7 +15,7 @@ A human-written, practitioner-focused guide to mobile robotics. The goal is prec
 ### 1. Fork and clone
 
 ```bash
-git clone https://github.com/robonn-uni-club/mobile-robotics-guidebook.git
+git clone https://github.com/robonn-club/mobile-robotics-guidebook.git
 cd mobile-robotics-guidebook
 ```
 
