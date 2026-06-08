@@ -1,8 +1,8 @@
 site_name: Mobile Robotics Guidebook
-site_url: https://robonn-uni-club.github.io/mobile-robotics-guidebook
+site_url: https://robonn-club.github.io/guidebook/
 site_description: A practitioner-focused guide to mobile robotics, maintained by Robonn — the Robotics Club at Universität Bonn.
-repo_url: https://github.com/robonn-uni-club/mobile-robotics-guidebook
-repo_name: robonn-uni-club/mobile-robotics-guidebook
+repo_url: https://github.com/robonn-club/guidebook
+repo_name: robonn-club/guidebook
 
 docs_dir: docs
 site_dir: site
