@@ -79,6 +79,13 @@ GitHub renders `README.md` automatically — use it as the entry point for every
 
 ---
 
+## Recognition
+
+Everyone who contributes shows up in the **[Contributors](../README.md#contributors)**
+image in the README — your avatar, linked to your GitHub profile. It updates
+automatically from the commit history, so once your pull request is merged you'll
+appear there. You don't need to write a whole chapter — correcting one mistake counts.
+
 ## License
 
 By contributing, you agree that your contributions will be licensed under [CC BY 4.0](LICENSE).
