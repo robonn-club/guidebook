@@ -96,9 +96,13 @@ markdown_extensions:
 extra_css:
   - assets/extra.css
 
+# SVG output, not CHTML: CHTML fetches its web fonts at runtime, which `privacy`
+# cannot see to self-host, so on the live site they 404. SVG needs no font files.
+# TeX input only (not tex-mml-*): the MathML reader re-typesets MathJax's own hidden
+# accessibility markup when mathjax.js re-runs, nesting every equation twice.
 extra_javascript:
   - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js
+  - https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js
 
 nav:
   - Home: index.md
