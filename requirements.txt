@@ -1,1 +1,3 @@
-mkdocs-material>=9.5
+mkdocs-material>=9.5,<10
+# MkDocs 2.0 is incompatible with Material; keep 1.x
+mkdocs>=1.6,<2

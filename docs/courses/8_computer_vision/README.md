@@ -67,4 +67,4 @@
 - **Multiple View Geometry in Computer Vision** — Hartley & Zisserman (2004) — the definitive reference for geometric vision; essential for SfM and stereo
 - **An Image is Worth 16x16 Words** — Dosovitskiy et al. (2020) — the ViT paper; short and readable; marks the shift to transformers in vision
 - **Mask R-CNN** — He et al. (2017) — read alongside the Faster R-CNN paper; together they cover the detection and segmentation pipeline
-- **RAFT: Recurrent All-Pairs Field Transforms for Optical Flow** — Teed & Deng (2020) — current state of the art in optical flow; clean formulation
+- **RAFT: Recurrent All-Pairs Field Transforms for Optical Flow** — Teed & Deng (2020) — an influential learning-based optical flow method with a clean formulation; many later methods build on it

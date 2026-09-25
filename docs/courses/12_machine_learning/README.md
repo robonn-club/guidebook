@@ -61,7 +61,7 @@
 
 ## Book / Article Resources
 
-- **Gaussian Processes for Machine Learning** — Rasmussen & Williams (2006) — free online at gaussianprocess.org; the reference for everything GP; chapters 2–5 cover everything listed here
+- **Gaussian Processes for Machine Learning** — Rasmussen & Williams (2006) — free online at gaussianprocess.org; the reference for everything GP; chapters 2–5 cover regression, classification, kernels and hyperparameter optimization, chapter 8 covers approximations for large datasets
 - **Deep Learning** — Goodfellow, Bengio, Courville (2016) — free online; Part II (chapters 6–12) covers feedforward networks, CNNs, and optimization
 - **Reinforcement Learning: An Introduction** — Sutton & Barto (2nd ed., 2018) — free online; the standard RL reference; chapters 3–6 for value methods, 13 for policy gradients
-- **A Survey on Deep Learning for Robot Navigation** — Bonin-Font et al. review — good entry point for how deep learning is applied specifically in mobile robotics
+- **[Motion planning and control for mobile robot navigation using machine learning: a survey](https://doi.org/10.1007/s10514-022-10039-8)** — Xiao, Liu, Warnell & Stone, *Autonomous Robots* (2022) — how learning is used across the navigation stack, and where classical methods still win

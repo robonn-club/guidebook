@@ -30,3 +30,6 @@ site/
 # Build / misc
 *.log
 *.tmp
+
+# MkDocs build output
+site/

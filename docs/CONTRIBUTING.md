@@ -15,8 +15,8 @@ A human-written, practitioner-focused guide to mobile robotics. The goal is prec
 ### 1. Fork and clone
 
 ```bash
-git clone https://github.com/robonn-club/mobile-robotics-guidebook.git
-cd mobile-robotics-guidebook
+git clone https://github.com/<your-username>/guidebook.git
+cd guidebook
 ```
 
 ### 2. Pick a topic
@@ -25,12 +25,12 @@ Check open issues for `help wanted` or `good first contribution` labels, or open
 
 ### 3. Write
 
-- Work inside the relevant folder (`courses/`, `resources/`, etc.).
+- Work inside the relevant folder under `docs/` (e.g. `docs/courses/`).
 - Each folder has a `README.md` describing its scope — read it before adding content.
 - Write in Markdown. Keep explanations direct and technical; avoid filler.
 - Include worked examples, code snippets, or diagrams where they add real clarity.
 - Cite your sources. If you reference a paper, book, or repository, link it.
-- Use `courses/TEMPLATE.md` as a starting point for new course pages.
+- Use `docs/courses/TEMPLATE.md` as a starting point for new course pages.
 
 ### 4. Preview locally
 
@@ -38,6 +38,16 @@ Check open issues for `help wanted` or `good first contribution` labels, or open
 pip install -r requirements.txt
 mkdocs serve
 # → http://127.0.0.1:8000
+
+# Before opening a PR, run the same check CI runs:
+mkdocs build --strict
+```
+
+If you changed anything in `examples/`, also run the tests:
+
+```bash
+pip install -r examples/requirements.txt pytest
+pytest tests
 ```
 
 ### 5. Open a pull request
@@ -59,6 +69,26 @@ mkdocs serve
 
 ---
 
+## Lessons with Runnable Code
+
+The [Start Here](start-here/index.md) lessons show how to pair a page with code that is guaranteed to run:
+
+- **Code lives in `examples/`**, one short NumPy-only file per lesson, runnable with `python examples/<name>.py`.
+- **Pages embed the real file**, not a copy. Mark a region in the Python file with
+  `# --8<-- [start:name]` and `# --8<-- [end:name]`, then include it in Markdown with
+  `--8<-- "file.py:name"` inside a code fence. The strict build fails if the file or section is missing.
+- **Numbers quoted on a page are tested.** `tests/test_lesson_pages.py` runs each example and checks
+  that every line of the page's ```` ```text ```` output blocks still appears in the real output; other
+  tests check the hand-worked examples and the statistics quoted in the text. Results of exercises
+  that require changing the code ("What we saw" boxes) are hand-run experiments: re-run them when
+  you change the example they modify.
+- **Figures are generated**, never hand-edited: `pip install matplotlib && python scripts/make_figures.py`
+  writes light and dark SVGs to `docs/start-here/assets/`. Show them with
+  `![alt](assets/name-light.svg#only-light)` and `![alt](assets/name-dark.svg#only-dark)`.
+- **Every source is checked.** Link to the actual video, paper (DOI) or chapter; do not cite from memory.
+
+---
+
 ## Folder Conventions
 
 ```
@@ -75,17 +105,17 @@ GitHub renders `README.md` automatically — use it as the entry point for every
 ## Links
 
 - Club home: [robonn.de](https://robonn.de)
-- Course overview: [courses/README.md](courses/README.md)
+- Course overview: [Courses](courses/README.md)
 
 ---
 
 ## Recognition
 
-Everyone who contributes shows up in the **[Contributors](../README.md#contributors)**
+Everyone who contributes shows up in the **[Contributors](https://github.com/robonn-club/guidebook#contributors)**
 image in the README — your avatar, linked to your GitHub profile. It updates
 automatically from the commit history, so once your pull request is merged you'll
 appear there. You don't need to write a whole chapter — correcting one mistake counts.
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under [CC BY 4.0](LICENSE).
+By contributing, you agree that your contributions will be licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
