@@ -18,7 +18,7 @@
 - Measurement model: z_t = C x_t + δ, with δ ~ N(0, Q)
 - Predict: propagate mean and covariance through A
 - Update: compute Kalman gain K, correct mean and covariance from residual (z - Cx)
-- The Kalman gain K is the derived in topic 1 — it decides how much to trust the measurement
+- The Kalman gain K comes from the product of two Gaussians (topic 1) — it decides how much to trust the measurement
 
 **Extended Kalman Filter (EKF)**
 - Nonlinear motion or measurement functions — f(x, u), h(x)
@@ -44,12 +44,22 @@
 
 ---
 
+## Hands-on
+
+The [Start Here](../../start-here/index.md) path implements every filter on this page in short, tested Python programs:
+[Bayes filter](../../start-here/1-bayes-filter.md) ·
+[Kalman filter](../../start-here/2-kalman-filter.md) ·
+[EKF](../../start-here/3-ekf-localization.md) ·
+[particle filter](../../start-here/4-particle-filter.md).
+
+---
+
 ## Videos
 
-- **Cyrill Stachniss — Bayes Filter** (YouTube @CyrillStachniss) — derives the predict-correct recursion from probability theory; watch before any other filter lecture
-- **Cyrill Stachniss — Kalman Filter** (YouTube @CyrillStachniss) — derives KF as a special case of the Bayes filter under linear Gaussian assumptions
-- **Cyrill Stachniss — Extended Kalman Filter** (YouTube @CyrillStachniss) — Jacobian linearization with a concrete 2D robot example
-- **Cyrill Stachniss — Particle Filter** (YouTube @CyrillStachniss) — importance sampling, resampling strategies, and failure modes
+- **Cyrill Stachniss — [Bayes Filter](https://www.youtube.com/watch?v=0lKHFJpaZvE)** — derives the predict-correct recursion from probability theory; watch before any other filter lecture
+- **Cyrill Stachniss — [Kalman Filter & EKF](https://www.youtube.com/watch?v=E-6paM_Iwfc)** — the Kalman filter as the Bayes filter for linear Gaussian systems, and its extension to nonlinear models by linearization
+- **Cyrill Stachniss — [Particle Filter and Monte Carlo Localization](https://www.youtube.com/watch?v=MsYlueVDLI0)** — importance sampling, resampling, and localization with particles
+- **Cyrill Stachniss — 5 Minutes with Cyrill:** [Bayes filter](https://www.youtube.com/watch?v=oUq0a8jHSQg), [Kalman filter](https://www.youtube.com/watch?v=o_HW6GnLqvg), [particle filter](https://www.youtube.com/watch?v=YBeVDxTHiYM) — short refreshers
 
 ---
 

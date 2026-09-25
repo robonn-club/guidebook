@@ -33,14 +33,23 @@
 
 ---
 
+## Hands-on
+
+Build all three yourself in the [Start Here](../../start-here/index.md) path:
+[Markov localization in a hallway](../../start-here/1-bayes-filter.md) ·
+[EKF localization](../../start-here/3-ekf-localization.md) ·
+[Monte Carlo localization from an unknown start](../../start-here/4-particle-filter.md).
+
+---
+
 ## Videos
 
-- **Cyrill Stachniss — Mobile Robotics, Lectures on Localization** (YouTube @CyrillStachniss) — covers Markov localization, EKF localization, and MCL with derivations
-- **Cyrill Stachniss — Particle Filters** (YouTube @CyrillStachniss) — resampling strategies and practical implementation details
+- **Cyrill Stachniss — [Kalman Filter & EKF](https://www.youtube.com/watch?v=E-6paM_Iwfc)** — the filter behind EKF localization
+- **Cyrill Stachniss — [Particle Filter and Monte Carlo Localization](https://www.youtube.com/watch?v=MsYlueVDLI0)** — MCL with derivations, resampling, and practical details
 
 ---
 
 ## Book / Article Resources
 
-- **Probabilistic Robotics** — Thrun, Burgard, Fox (2005) — Chapter 7: *Mobile Robot Localization: Markov and Gaussian*, Chapter 8: *Mobile Robot Localization: The Particle Filter*. The reference implementations of all algorithms on this page.
+- **Probabilistic Robotics** — Thrun, Burgard, Fox (2005) — Chapter 7: *Mobile Robot Localization: Markov and Gaussian*, Chapter 8: *Mobile Robot Localization: Grid and Monte Carlo*. The reference implementations of all algorithms on this page.
 - **Introduction to Autonomous Mobile Robots** — Siegwart, Nourbakhsh, Scaramuzza (2011) — Chapter 5: *Mobile Robot Localization*. More accessible introduction before diving into Thrun.

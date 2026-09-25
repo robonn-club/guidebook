@@ -44,7 +44,7 @@
 
 - **Cyrill Stachniss — Mobile Robotics, Lectures 1–3** (YouTube @CyrillStachniss) — probability recap and Bayes filter derivation applied directly to robotics
 - **3Blue1Brown — Essence of Linear Algebra** (YouTube @3blue1brown) — 15 short videos; geometric intuition before algebra
-- **3Blue1Brown — Bayes Theorem** (YouTube @3blue1brown) — single video, best visual explanation of Bayes available
+- **3Blue1Brown — [Bayes theorem, the geometry of changing beliefs](https://www.youtube.com/watch?v=HZGCoVF3YvM)** — single video, best visual explanation of Bayes available
 - **Gilbert Strang — MIT 18.06 Linear Algebra** (MIT OCW / YouTube) — rigorous university reference; work through lectures 1–10
 
 ---

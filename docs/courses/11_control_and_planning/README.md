@@ -16,7 +16,7 @@
 **Reactive Control**
 - Potential field navigation — attractive potential toward goal, repulsive potential from obstacles
 - Gradient descent on the combined field gives the control input
-- Local minima — the fundamental failure mode; robot gets trapped in saddle points
+- Local minima — the fundamental failure mode; the robot gets trapped where attractive and repulsive forces cancel before it reaches the goal
 - Bug algorithms — guaranteed to reach goal by following obstacle boundaries; simple but slow
 
 **Path Planning — Graph-Based**
