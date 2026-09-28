@@ -2,6 +2,15 @@
 
 > Given a map, where is the robot? — estimating pose from sensor data when the environment is already known.
 
+!!! info "At Bonn — MA-MORO-M01"
+
+    Examined in **Introduction to Mobile Robotics** (`MA-MORO-M01`), 9 CP, 1st semester —
+    the manual lists "localization" and "particle filter" among its contents. Two written exams: 120 min (67%) and 60 min (33%). You need at least 50% of the
+    exercise points to be admitted to them.
+
+    *Sat this exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -44,12 +53,14 @@ Build all three yourself in the [Start Here](../../start-here/index.md) path:
 
 ## Videos
 
-- **Cyrill Stachniss — [Kalman Filter & EKF](https://www.youtube.com/watch?v=E-6paM_Iwfc)** — the filter behind EKF localization
-- **Cyrill Stachniss — [Particle Filter and Monte Carlo Localization](https://www.youtube.com/watch?v=MsYlueVDLI0)** — MCL with derivations, resampling, and practical details
+- **[EKF Localization](https://www.youtube.com/watch?v=PiCC-SxWlH8)** — Nived Chebrolu (StachnissLab, Uni Bonn) — the EKF applied to localization against a known map
+- **[Particle Filter and Monte Carlo Localization](https://www.youtube.com/watch?v=MsYlueVDLI0)** — Cyrill Stachniss — resampling strategies and practical implementation details
+- **[Localization — 5 Minutes with Cyrill](https://www.youtube.com/watch?v=TLe4otkRAts)** — the problem statement in five minutes; watch first if the topic is new
+- **[Mobile Sensing and Robotics 1](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQEn33QDVGJpiZLi-SlL7vA)** — Cyrill Stachniss (Uni Bonn) — the full course; covers Markov, EKF, and Monte Carlo localization with derivations
 
 ---
 
 ## Book / Article Resources
 
-- **Probabilistic Robotics** — Thrun, Burgard, Fox (2005) — Chapter 7: *Mobile Robot Localization: Markov and Gaussian*, Chapter 8: *Mobile Robot Localization: Grid and Monte Carlo*. The reference implementations of all algorithms on this page.
-- **Introduction to Autonomous Mobile Robots** — Siegwart, Nourbakhsh, Scaramuzza (2011) — Chapter 5: *Mobile Robot Localization*. More accessible introduction before diving into Thrun.
+- **[Probabilistic Robotics](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/)** — Thrun, Burgard, Fox (2005) — Chapter 7: *Mobile Robot Localization: Markov and Gaussian*, Chapter 8: *Mobile Robot Localization: Grid and Monte Carlo*. The reference implementations of all algorithms on this page.
+- **[Introduction to Autonomous Mobile Robots](https://mitpress.mit.edu/9780262015356/introduction-to-autonomous-mobile-robots/)** — Siegwart, Nourbakhsh, Scaramuzza (2011) — Chapter 5: *Mobile Robot Localization*. More accessible introduction before diving into Thrun.

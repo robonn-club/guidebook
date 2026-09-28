@@ -1,0 +1,25 @@
+name: Report a broken link
+description: A link in the guidebook is dead, moved, or goes to the wrong place.
+labels: ["broken-link", "good first contribution"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      placeholder: courses/4_state_estimation/
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: The broken link
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What happens?
+      description: 404, redirect to a search page, paywall, wrong resource — and the replacement URL if you found one.
+    validations:
+      required: true

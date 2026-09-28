@@ -2,6 +2,23 @@
 
 > Estimating what cannot be directly measured — a robot's pose, velocity, or map — by recursively fusing motion predictions with sensor observations under uncertainty.
 
+!!! info "At Bonn — MA-MORO-M01 and MA-MORO-M02"
+
+    Examined twice over, which makes this the highest-leverage page on the site for a first
+    semester.
+
+    **Introduction to Mobile Robotics** (`MA-MORO-M01`, 9 CP, 1st semester) covers "Bayes
+    filter, state estimation, Kalman filter, extended Kalman filter, particle filter".
+    Two written exams: 120 min (67%) and 60 min (33%). You need at least 50% of the
+    exercise points to be admitted to them.
+
+    **Trajectory Estimation** (`MA-MORO-M02`, 6 CP, 1st semester) covers the Kalman filter,
+    EKF and smoothing again, this time for navigation. Two written exams of 60 min, 50% each,
+    with the same ≥50% exercise-points gate.
+
+    *Sat either exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -56,15 +73,15 @@ The [Start Here](../../start-here/index.md) path implements every filter on this
 
 ## Videos
 
-- **Cyrill Stachniss — [Bayes Filter](https://www.youtube.com/watch?v=0lKHFJpaZvE)** — derives the predict-correct recursion from probability theory; watch before any other filter lecture
-- **Cyrill Stachniss — [Kalman Filter & EKF](https://www.youtube.com/watch?v=E-6paM_Iwfc)** — the Kalman filter as the Bayes filter for linear Gaussian systems, and its extension to nonlinear models by linearization
-- **Cyrill Stachniss — [Particle Filter and Monte Carlo Localization](https://www.youtube.com/watch?v=MsYlueVDLI0)** — importance sampling, resampling, and localization with particles
-- **Cyrill Stachniss — 5 Minutes with Cyrill:** [Bayes filter](https://www.youtube.com/watch?v=oUq0a8jHSQg), [Kalman filter](https://www.youtube.com/watch?v=o_HW6GnLqvg), [particle filter](https://www.youtube.com/watch?v=YBeVDxTHiYM) — short refreshers
+- **[Bayes Filter](https://www.youtube.com/watch?v=0lKHFJpaZvE)** — Cyrill Stachniss — derives the predict-correct recursion from probability theory; watch before any other filter lecture
+- **[Kalman Filter & EKF](https://www.youtube.com/watch?v=E-6paM_Iwfc)** — Cyrill Stachniss — derives the KF as a special case of the Bayes filter, then linearizes it into the EKF
+- **[Particle Filter and Monte Carlo Localization](https://www.youtube.com/watch?v=MsYlueVDLI0)** — Cyrill Stachniss — importance sampling, resampling strategies, and failure modes
+- **[Particle Filter — 5 Minutes with Cyrill](https://www.youtube.com/watch?v=YBeVDxTHiYM)** — the five-minute version; good for a first pass or a refresher
 
 ---
 
 ## Book / Article Resources
 
-- **Probabilistic Robotics** — Thrun, Burgard, Fox (2005) — Chapter 3: *Gaussian Filters* (KF, EKF, UKF) and Chapter 4: *Nonparametric Filters* (particle filter). The derivations here follow this book directly.
-- **State Estimation for Robotics** — Barfoot (2017) — deeper treatment of the EKF and batch estimation; covers Lie group formulations used in modern SLAM.
-- **Optimal State Estimation** — Dan Simon (2006) — comprehensive reference for KF theory; covers derivations, stability, and practical tuning in detail.
+- **[Probabilistic Robotics](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/)** — Thrun, Burgard, Fox (2005) — Chapter 3: *Gaussian Filters* (KF, EKF, UKF) and Chapter 4: *Nonparametric Filters* (particle filter). The derivations here follow this book directly.
+- **[State Estimation for Robotics](http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17.pdf)** — Barfoot (2017) — deeper treatment of the EKF and batch estimation; covers Lie group formulations used in modern SLAM. Free PDF from the author.
+- **[Optimal State Estimation](https://doi.org/10.1002/0470045345)** — Dan Simon (2006) — comprehensive reference for KF theory; covers derivations, stability, and practical tuning in detail.

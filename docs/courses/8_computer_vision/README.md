@@ -2,6 +2,18 @@
 
 > Enabling robots to interpret the visual world — from geometric understanding of cameras to semantic recognition of objects, people, and scenes.
 
+!!! info "At Bonn — MA-MORO-M04"
+
+    Examined in **Computer Vision** (`MA-MORO-M04`), 9 CP, 1st semester — one written exam
+    of 120 min (100%). Admission requires the regularly provided exercise sheets, which may
+    be done in pairs, with at least 50% of the points achieved.
+
+    This is the same module as `MA-INF 2201` in the Computer Science M.Sc., taught by
+    Jürgen Gall — whose course page is linked below.
+
+    *Sat this exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -54,17 +66,17 @@
 
 ## Videos
 
-- **Jürgen Gall — Computer Vision lecture series** (YouTube, Universität Bonn) — covers classical and deep learning CV with robotics applications; primary reference for this page
-- **CS231n — Deep Learning for Computer Vision** (Stanford, YouTube) — the standard deep learning for vision course; lectures by Fei-Fei Li and Andrej Karpathy
-- **Daniel Cremers — Multiple View Geometry** (YouTube @DanielCremers4) — geometric vision; epipolar geometry, SfM, and dense reconstruction
-- **First Principles of Computer Vision** (YouTube, Columbia / Shree Nayar) — image formation, optics, and sensing from first principles
+- **[Computer Vision (MA-INF 2201) — course page](https://pages.iai.uni-bonn.de/gall_juergen/teaching/Lectures/cv21.html)** — Jürgen Gall (Uni Bonn) — slides and materials for the Bonn computer vision lecture; the local reference for this page
+- **[CS231n: Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)** — Stanford (Spring 2017) — the standard deep learning for vision course; lectures by Fei-Fei Li, Justin Johnson, and Serena Yeung
+- **[Multiple View Geometry](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4)** — Daniel Cremers (TU München) — geometric vision; epipolar geometry, SfM, and dense reconstruction ([slides and exercises](https://vision.in.tum.de/teaching/online/mvg))
+- **[First Principles of Computer Vision](https://fpcv.cs.columbia.edu/)** — Shree Nayar (Columbia) — image formation, optics, and sensing from first principles; short, tightly-scoped videos
 
 ---
 
 ## Book / Article Resources
 
-- **Computer Vision: Algorithms and Applications** — Szeliski (2nd ed., 2022) — free online; the most comprehensive single reference covering classical and modern CV
-- **Multiple View Geometry in Computer Vision** — Hartley & Zisserman (2004) — the definitive reference for geometric vision; essential for SfM and stereo
-- **An Image is Worth 16x16 Words** — Dosovitskiy et al. (2020) — the ViT paper; short and readable; marks the shift to transformers in vision
-- **Mask R-CNN** — He et al. (2017) — read alongside the Faster R-CNN paper; together they cover the detection and segmentation pipeline
-- **RAFT: Recurrent All-Pairs Field Transforms for Optical Flow** — Teed & Deng (2020) — an influential learning-based optical flow method with a clean formulation; many later methods build on it
+- **[Computer Vision: Algorithms and Applications](https://szeliski.org/Book/)** — Szeliski (2nd ed., 2022) — free online; the most comprehensive single reference covering classical and modern CV
+- **[Multiple View Geometry in Computer Vision](https://www.robots.ox.ac.uk/~vgg/hzbook/)** — Hartley & Zisserman (2004) — the definitive reference for geometric vision; essential for SfM and stereo
+- **[An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929)** — Dosovitskiy et al. (2020) — the ViT paper; short and readable; marks the shift to transformers in vision
+- **[Mask R-CNN](https://arxiv.org/abs/1703.06870)** — He et al. (2017) — read alongside the Faster R-CNN paper; together they cover the detection and segmentation pipeline
+- **[RAFT: Recurrent All-Pairs Field Transforms for Optical Flow](https://arxiv.org/abs/2003.12039)** — Teed & Deng (2020) — the reference formulation for learned optical flow; clean and widely built upon

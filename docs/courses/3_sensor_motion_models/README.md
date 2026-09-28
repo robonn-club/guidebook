@@ -2,6 +2,16 @@
 
 > The two probabilistic models every state estimator depends on — how the robot moves and how it perceives.
 
+!!! info "At Bonn — MA-MORO-M01"
+
+    Examined in **Introduction to Mobile Robotics** (`MA-MORO-M01`), 9 CP, 1st semester —
+    the manual lists "probabilistic motion models, probabilistic sensor models" among its
+    contents. Two written exams: 120 min (67%) and 60 min (33%). You need at least 50% of the
+    exercise points to be admitted to them.
+
+    *Sat this exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -27,12 +37,12 @@
 
 ## Videos
 
-- **Cyrill Stachniss — Mobile Robotics, Lecture 4: Motion Models** (YouTube @CyrillStachniss) — derives both odometry and velocity models from scratch
-- **Cyrill Stachniss — Mobile Robotics, Lecture 5: Sensor Models** (YouTube @CyrillStachniss) — beam model and likelihood field model with worked examples
+- **[Motion Models](https://www.youtube.com/watch?v=IVTV7vJgIkU)** — Nived Chebrolu (StachnissLab, Uni Bonn) — derives both the odometry and velocity models from scratch
+- **[Observation Models](https://www.youtube.com/watch?v=SfwxLpdFB-o)** — Cyrill Stachniss — beam model and likelihood field model with worked examples
 
 ---
 
 ## Book / Article Resources
 
-- **Probabilistic Robotics** — Thrun, Burgard, Fox (2005) — Chapter 5: *Robot Motion* and Chapter 6: *Robot Perception*. These two chapters are the definitive reference; everything on this page comes from them.
-- **Introduction to Autonomous Mobile Robots** — Siegwart, Nourbakhsh, Scaramuzza (2011) — Chapter 4: *Perception*. More hardware-focused treatment of sensor characteristics.
+- **[Probabilistic Robotics](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/)** — Thrun, Burgard, Fox (2005) — Chapter 5: *Robot Motion* and Chapter 6: *Robot Perception*. These two chapters are the definitive reference; everything on this page comes from them.
+- **[Introduction to Autonomous Mobile Robots](https://mitpress.mit.edu/9780262015356/introduction-to-autonomous-mobile-robots/)** — Siegwart, Nourbakhsh, Scaramuzza (2011) — Chapter 4: *Perception*. More hardware-focused treatment of sensor characteristics.

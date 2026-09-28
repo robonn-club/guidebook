@@ -7,16 +7,30 @@ repo_name: robonn-club/guidebook
 docs_dir: docs
 site_dir: site
 
-# Contributor template, not a published page
+# TEMPLATE.md is a contributor scaffold, not a page.
 exclude_docs: |
   courses/TEMPLATE.md
 
-# Fail `mkdocs build --strict` on any link that doesn't resolve
+# Built and linked from the home page, but deliberately kept out of the sidebar.
+not_in_nav: |
+  CONTRIBUTING.md
+
+# Defining plugins disables the implicit `search`, so it is listed explicitly.
+# `privacy` self-hosts external assets (Google Fonts, MathJax) at build time.
+plugins:
+  - search
+  - privacy
+
+# MkDocs defaults several of these to `info`, which --strict ignores.
+# Raised to `warn` so --strict actually fails the build on a dead link.
 validation:
-  omitted_files: warn
-  absolute_links: warn
-  unrecognized_links: warn
-  anchors: warn
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: warn
 
 theme:
   name: material
@@ -89,10 +103,14 @@ markdown_extensions:
 extra_css:
   - assets/extra.css
 
+# SVG output, not CHTML: CHTML fetches its web fonts at runtime, which `privacy`
+# cannot see to self-host, so on the live site they 404. SVG needs no font files.
+# TeX input only (not tex-mml-*): the MathML reader re-typesets MathJax's own hidden
+# accessibility markup when mathjax.js re-runs, nesting every equation twice.
 extra_javascript:
   - javascripts/mathjax.js
   - javascripts/demos.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js
 
 watch:
   - examples

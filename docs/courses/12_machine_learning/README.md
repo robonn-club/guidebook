@@ -2,6 +2,18 @@
 
 > Learning-based methods for robotics — from principled Bayesian regression to deep neural networks for perception and control.
 
+!!! info "At Bonn — MA-MORO-M06"
+
+    Examined in **Machine Learning for Robotics and Computer Vision** (`MA-MORO-M06`), 6 CP,
+    2nd semester — one written exam of 120 min (100%), with at least 50% of the exercise
+    points required for admission. The module recommends Python and `MA-MORO-M01` beforehand.
+
+    Its contents run past this page in places: Vision Transformers, representation learning,
+    self-supervised learning and vision language models are all listed.
+
+    *Sat this exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -53,15 +65,15 @@
 
 ## Videos
 
-- **Cyrill Stachniss — Gaussian Processes** (YouTube @CyrillStachniss) — full lecture series on GP regression, classification, and sparse approximations; directly applicable to robotics
-- **Cyrill Stachniss — Machine Learning for Robotics** (YouTube @CyrillStachniss) — covers supervised learning, GPs, and deep learning in a robotics context
-- **Andrej Karpathy — Neural Networks: Zero to Hero** (YouTube @AndrejKarpathy) — backpropagation, language models, and transformers built from scratch; best available explanation of the mechanics
+- **[Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)** — Andrej Karpathy — backpropagation, language models, and transformers built from scratch; best available explanation of the mechanics
+- **[Mobile Sensing and Robotics 2](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQh_J16IMwDlji18SWQ2PZ6)** — Cyrill Stachniss (Uni Bonn) — where learned components sit inside a classical robotics stack
+- **[CS231n: Deep Learning for Computer Vision](https://www.youtube.com/playlist?list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)** — Stanford — the perception half of learning for robotics, taught properly
 
 ---
 
 ## Book / Article Resources
 
-- **Gaussian Processes for Machine Learning** — Rasmussen & Williams (2006) — free online at gaussianprocess.org; the reference for everything GP; chapters 2–5 cover regression, classification, kernels and hyperparameter optimization, chapter 8 covers approximations for large datasets
-- **Deep Learning** — Goodfellow, Bengio, Courville (2016) — free online; Part II (chapters 6–12) covers feedforward networks, CNNs, and optimization
-- **Reinforcement Learning: An Introduction** — Sutton & Barto (2nd ed., 2018) — free online; the standard RL reference; chapters 3–6 for value methods, 13 for policy gradients
-- **[Motion planning and control for mobile robot navigation using machine learning: a survey](https://doi.org/10.1007/s10514-022-10039-8)** — Xiao, Liu, Warnell & Stone, *Autonomous Robots* (2022) — how learning is used across the navigation stack, and where classical methods still win
+- **[Gaussian Processes for Machine Learning](http://gaussianprocess.org/gpml/)** — Rasmussen & Williams (2006) — free online; the reference for everything GP; chapters 2–5 cover everything listed here
+- **[Deep Learning](https://www.deeplearningbook.org/)** — Goodfellow, Bengio, Courville (2016) — free online; Part II (chapters 6–12) covers feedforward networks, CNNs, and optimization
+- **[Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html)** — Sutton & Barto (2nd ed., 2018) — free online; the standard RL reference; chapters 3–6 for value methods, 13 for policy gradients
+- **[Visual Navigation for Mobile Robots: A Survey](https://doi.org/10.1007/s10846-008-9235-4)** — Bonin-Font, Ortiz, Oliver (2008) — pre-deep-learning, but the clearest taxonomy of map-based vs. mapless visual navigation; read it for the problem framing, then the modern papers for the methods

@@ -2,6 +2,18 @@
 
 > Absolute positioning anywhere on Earth using satellite signals — understanding both the measurement principle and the error sources that limit accuracy.
 
+!!! info "At Bonn — MA-MORO-M02"
+
+    Examined in **Trajectory Estimation** (`MA-MORO-M02`), 6 CP, 1st semester. The manual
+    lists the whole GNSS half of this page: signals and receiver technology, observables,
+    atmospheric effects and multipath, single point positioning, relative GNSS with carrier
+    phases, PPP, RTK, network and kinematic GNSS, attitude determination, and GPS, GLONASS,
+    Galileo and Beidou. Two written exams of 60 min, 50% each; admission to both requires
+    at least 50% of the exercise points.
+
+    *Sat this exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -48,15 +60,15 @@
 
 ## Videos
 
-- **Lars Klingbeil — GNSS and Navigation lectures** (Universität Bonn) — signal processing, error modeling, and RTK derivations; primary reference for this page
-- **ESA Navipedia video series** (navipedia.net) — modular explanations of GNSS signals, error sources, and augmentation systems
-- **NovAtel GNSS tutorials** (YouTube @NovAtel) — practical explanations of RTK, PPP, and integration; industry perspective
+- **[ESA Navipedia](https://gssc.esa.int/navipedia/)** — modular explanations of GNSS signals, error sources, and augmentation systems; look up any GNSS concept here first
+- **[Mobile Sensing and Robotics 2](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQh_J16IMwDlji18SWQ2PZ6)** — Cyrill Stachniss (Uni Bonn) — GNSS as one sensor among many, and how it enters a state estimator
+- **Lasse Klingbeil — GNSS and Navigation lectures** (IGG, Universität Bonn) — signal processing, error modeling, and RTK derivations; taught in Bonn, recordings not public
 
 ---
 
 ## Book / Article Resources
 
-- **Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems** — Groves (2nd ed., 2013) — covers GNSS signal processing, error modeling, and all integration architectures; the most complete single reference
-- **Understanding GPS/GNSS: Principles and Applications** — Kaplan & Hegarty (3rd ed., 2017) — broader treatment of receiver design and signal processing
-- **GPS Satellite Surveying** — Leick, Rapoport, Tatarnikov (4th ed., 2015) — deep treatment of carrier phase processing, double differencing, and ambiguity resolution
-- **[ESA Navipedia](https://gssc.esa.int/navipedia/)** — free online encyclopedia; accurate and well-maintained; look up any GNSS concept here first
+- **[GPS Satellite Surveying](https://doi.org/10.1002/9781119018612)** — Leick, Rapoport, Tatarnikov (4th ed., 2015) — deep treatment of carrier phase processing, double differencing, and ambiguity resolution
+- **[ESA Navipedia — GNSS fundamentals](https://gssc.esa.int/navipedia/index.php/GNSS_Basic_Observables)** — free and accurate; the observables and error model pages cover most of this syllabus without a textbook
+- **Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems** — Groves (2nd ed., 2013), Artech House — covers GNSS signal processing, error modeling, and all integration architectures; the most complete single reference
+- **Understanding GPS/GNSS: Principles and Applications** — Kaplan & Hegarty (3rd ed., 2017), Artech House — broader treatment of receiver design and signal processing

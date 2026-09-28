@@ -2,6 +2,18 @@
 
 > Building a representation of the environment from sensor data — assuming the robot's poses are known.
 
+!!! info "At Bonn — MA-MORO-M01 and MA-MORO-M05"
+
+    Split across two semesters. `MA-MORO-M01` (9 CP, 1st semester) covers "occupancy
+    mapping" — two written exams, 120 min (67%) and 60 min (33%), admission requires ≥50%
+    of the exercise points. **Robot Mapping** (`MA-MORO-M05`, 6 CP, 2nd semester) goes
+    further into "point cloud registration and iterative closest point", 3D sensors and
+    mobile mapping — two written exams of 60 min, 50% each, again gated on ≥50% of the
+    exercise points. M05 recommends having done M01.
+
+    *Sat either exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -36,13 +48,15 @@
 
 ## Videos
 
-- **Cyrill Stachniss — Mobile Robotics, Lecture: Occupancy Grid Mapping** (YouTube @CyrillStachniss) — derives the log-odds update from Bayes' rule; the clearest treatment available
-- **Cyrill Stachniss — OctoMap and 3D Mapping** (YouTube @CyrillStachniss) — covers 3D representations and the memory vs. resolution trade-off
+- **[Occupancy Grid Maps](https://www.youtube.com/watch?v=v-Rm9TUG9LA)** — Cyrill Stachniss — derives the log-odds update from Bayes' rule; the clearest treatment available
+- **[Occupancy Grid — 5 Minutes with Cyrill](https://www.youtube.com/watch?v=8ckhPViqneg)** — the idea in five minutes before the full derivation
+- **[Point Cloud Alignment using ICP](https://www.youtube.com/watch?v=djnd502836w)** — Cyrill Stachniss — how the scans that build a 3D map get registered to each other
 
 ---
 
 ## Book / Article Resources
 
-- **Probabilistic Robotics** — Thrun, Burgard, Fox (2005) — Chapter 9: *Occupancy Grid Mapping*. Derives log-odds from scratch; read this before writing any mapping code.
-- **OctoMap: An Efficient Probabilistic 3D Mapping Framework** — Hornung et al. (2013) — the original paper; short and readable; explains the octree structure and probabilistic update rule.
-- **Introduction to Autonomous Mobile Robots** — Siegwart, Nourbakhsh, Scaramuzza (2011) — Chapter 6: *Mapping*. Broader overview of map types before going deep on grids.
+- **[Probabilistic Robotics](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/)** — Thrun, Burgard, Fox (2005) — Chapter 9: *Occupancy Grid Mapping*. Derives log-odds from scratch; read this before writing any mapping code.
+- **[OctoMap: An Efficient Probabilistic 3D Mapping Framework](https://doi.org/10.1007/s10514-012-9321-0)** — Hornung et al. (2013) — the original paper; short and readable; explains the octree structure and probabilistic update rule.
+- **[OctoMap — library and documentation](https://octomap.github.io/)** — the implementation the paper describes; the docs double as a practical guide to 3D occupancy mapping.
+- **[Introduction to Autonomous Mobile Robots](https://mitpress.mit.edu/9780262015356/introduction-to-autonomous-mobile-robots/)** — Siegwart, Nourbakhsh, Scaramuzza (2011) — Chapter 6: *Mapping*. Broader overview of map types before going deep on grids.

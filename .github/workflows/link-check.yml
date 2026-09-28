@@ -1,0 +1,34 @@
+name: Weekly Link Check
+
+# This guidebook is a directory of links, so link rot is the main failure mode.
+# Runs weekly and opens an issue when something goes dead.
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        id: lychee
+        with:
+          args: >-
+            --no-progress
+            --max-concurrency 4
+            --accept 200,206,429
+            'docs/**/*.md' 'examples/*.md' 'README.md'
+          fail: false
+      - name: Open an issue on failure
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Dead links found in the guidebook
+          content-filepath: ./lychee/out.md
+          labels: broken-link

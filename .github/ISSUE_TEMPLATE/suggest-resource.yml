@@ -1,0 +1,46 @@
+name: Suggest a resource
+description: Recommend a video, book chapter, paper, or tutorial for one of the courses.
+labels: ["resource", "good first contribution"]
+body:
+  - type: dropdown
+    id: course
+    attributes:
+      label: Which course?
+      options:
+        - 1 — Math & Probability
+        - 2 — Python for Robotics
+        - 3 — Sensor & Motion Models
+        - 4 — State Estimation
+        - 5 — Localization
+        - 6 — Mapping
+        - 7 — Control & Planning
+        - 8 — Computer Vision
+        - 9 — Inertial Navigation
+        - 10 — Global Navigation Satellite Systems
+        - 11 — SLAM
+        - 12 — Machine Learning
+        - 13 — C++ for Robotics
+        - Something else / a new course
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The canonical URL — the author's or publisher's page, a DOI, an arXiv abstract, or the YouTube video/playlist. Please don't link pirated PDFs.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where exactly?
+      description: Chapter and page range for a book, or the specific lecture in a series.
+      placeholder: "Chapter 3, pp. 40–81"
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this one?
+      description: One or two sentences on what this gives a reader that the resources already listed don't. This is the part that makes the guidebook worth reading.
+    validations:
+      required: true

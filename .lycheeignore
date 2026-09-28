@@ -1,0 +1,13 @@
+# Publishers that return 403 to automated checkers while serving humans fine.
+# These links are correct; they just cannot be machine-verified from CI.
+https://mitpress\.mit\.edu/.*
+https://www\.microsoft\.com/en-us/research/.*
+https://onlinelibrary\.wiley\.com/.*
+https://digital-library\.theiet\.org/.*
+https://discovery\.ucl\.ac\.uk/.*
+https://doi\.org/10\.1002/.*
+https://doi\.org/10\.1049/.*
+# YouTube serves a consent interstitial to datacenter IPs.
+https://www\.youtube\.com/.*
+# Local preview URL from the CONTRIBUTING quickstart, not a real link.
+http://127\.0\.0\.1:8000

@@ -2,6 +2,13 @@
 
 > C++ is where the algorithms from this guidebook run in production — state estimators, scan matchers, and graph optimizers all require the performance and control that Python cannot provide.
 
+!!! warning "At Bonn — elective, not mandatory"
+
+    No mandatory MoRo module teaches C++. It is available as the elective **Modern C++ for
+    Robotics and Computer Vision** (`MA-MORO-E03`, 6 CP), whose contents include modern
+    CMake, memory management, the STL, generic programming, LiDAR mapping and 3D point cloud
+    processing. Electives are otherwise outside the scope of these boxes.
+
 ---
 
 ## Topics
@@ -45,16 +52,17 @@
 
 ## Videos
 
-- **CppCon — Back to Basics: Smart Pointers** (YouTube @CppCon) — covers `unique_ptr` and `shared_ptr` clearly
-- **CppCon — Back to Basics: Move Semantics** (YouTube @CppCon) — essential for understanding how Eigen and STL containers work efficiently
+- **[Back to Basics: Smart Pointers](https://www.youtube.com/watch?v=xGDLkt-jBJ4)** — Arthur O'Dwyer, CppCon 2019 — covers `unique_ptr` and `shared_ptr` clearly
+- **[Back to Basics: Move Semantics (part 1)](https://www.youtube.com/watch?v=St0MNEU5b0o)** and **[(part 2)](https://www.youtube.com/watch?v=pIzaZbKUw2s)** — Klaus Iglberger, CppCon 2019 — essential for understanding how Eigen and STL containers work efficiently
 - **Articulated Robotics — ROS2 in C++** (YouTube @ArticulatedRobotics) — practical node writing with rclcpp
 
 ---
 
 ## Book / Article Resources
 
-- **Effective Modern C++** — Scott Meyers (2014) — items on smart pointers, move semantics, and lambdas are directly applicable
 - **[Eigen documentation](https://eigen.tuxfamily.org/dox/)** — the module guide and the *Getting Started* page; the API docs are comprehensive
-- **[g2o — A General Framework for Graph Optimization](https://github.com/RainerKuemmerle/g2o)** — read the paper (Kümmerle et al., 2011) before diving into the code
+- **[g2o — A General Framework for Graph Optimization](https://github.com/RainerKuemmerle/g2o)** — read [the paper](http://ais.informatik.uni-freiburg.de/publications/papers/kuemmerle11icra.pdf) (Kümmerle et al., 2011) before diving into the code
 - **[GTSAM tutorials](https://gtsam.org/tutorials/intro.html)** — the factor graph introduction is the clearest explanation of graph-based SLAM available
 - **[cppreference.com](https://en.cppreference.com/)** — authoritative reference for the standard library
+- **[ROS2 C++ documentation](https://docs.ros.org/en/jazzy/index.html)** — the rclcpp tutorials; start from *Writing a simple publisher and subscriber*
+- **Effective Modern C++** — Scott Meyers (2014), O'Reilly — items on smart pointers, move semantics, and lambdas are directly applicable

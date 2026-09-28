@@ -1,0 +1,53 @@
+name: Share an exam experience
+description: You sat a MoRo module exam. Tell the next cohort what it was actually like.
+labels: ["at-bonn", "good first contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The module manual tells students the exam is 120 minutes. It cannot tell them what
+        the exam actually asks for. That gap is the whole reason this guidebook exists, and
+        only someone who sat the exam can close it.
+
+        Please don't reproduce exam questions — describe the shape of it, not the content.
+  - type: dropdown
+    id: module
+    attributes:
+      label: Which module?
+      options:
+        - MA-MORO-M01 — Introduction to Mobile Robotics
+        - MA-MORO-M02 — Trajectory Estimation
+        - MA-MORO-M03 — Python for Robotics and Computer Vision
+        - MA-MORO-M04 — Computer Vision
+        - MA-MORO-M05 — Robot Mapping
+        - MA-MORO-M06 — Machine Learning for Robotics and Computer Vision
+        - An elective module
+    validations:
+      required: true
+  - type: input
+    id: term
+    attributes:
+      label: Which term did you sit it?
+      description: So the next reader knows how current this is. Exams change.
+      placeholder: Winter 2025/26
+    validations:
+      required: true
+  - type: textarea
+    id: emphasis
+    attributes:
+      label: What did it emphasise?
+      description: Derivations or application? Closed-book recall or problem solving? Which topics carried the most marks?
+    validations:
+      required: true
+  - type: textarea
+    id: preparation
+    attributes:
+      label: What do you wish you had revised?
+      description: The single most useful thing you can write here. What caught you out, and what turned out not to matter.
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: What actually helped you prepare?
+      description: Which of this guidebook's linked resources were worth the time — and what was missing that you had to find yourself?

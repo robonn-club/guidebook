@@ -71,7 +71,7 @@ No robotics background needed.
 
     NumPy, SciPy, Matplotlib, OpenCV, and ROS2 Python.
 
-    [Open](courses/2_python/README.md)
+    [Python](courses/2_python/README.md) · [C++](courses/13_cpp/README.md)
 
 </div>
 
@@ -164,14 +164,6 @@ No robotics background needed.
     Gaussian processes, deep learning for perception, uncertainty estimation, and RL.
 
     [Open](courses/12_machine_learning/README.md)
-
--   **C++ for Robotics**
-
-    ---
-
-    Modern C++, Eigen, g2o, GTSAM, ROS2 C++, and CMake.
-
-    [Open](courses/13_cpp/README.md)
 
 </div>
 

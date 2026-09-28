@@ -2,6 +2,16 @@
 
 > Estimating position, velocity, and attitude from accelerometers and gyroscopes alone — self-contained navigation that works anywhere but drifts over time.
 
+!!! info "At Bonn — MA-MORO-M02"
+
+    Examined in **Trajectory Estimation** (`MA-MORO-M02`), 6 CP, 1st semester — the manual
+    lists "inertial sensors, accelerometer, gyroscope, IMU, magnetometer", odometry and
+    inertial navigation among its contents. Two written exams of 60 min, 50% each; admission to
+    both requires successful completion of the exercises with at least 50% of the points.
+
+    *Sat this exam? [Tell us what it was actually like](https://github.com/robonn-club/guidebook/issues/new?template=exam-experience.yml) — that is the part no
+    module manual can give you.*
+
 ---
 
 ## Topics
@@ -52,14 +62,15 @@
 
 ## Videos
 
-- **Lars Klingbeil — Navigation Systems lectures** (Universität Bonn) — strapdown mechanization, error modeling, and GNSS/INS integration; primary reference for this page
-- **Paul Groves — INS lecture series** (UCL, YouTube) — comprehensive treatment of strapdown equations and error characteristics
-- **Kalibr IMU calibration tutorial** (GitHub, ETH Zurich) — practical guide to IMU noise parameter estimation using Allan variance
+- **[Mobile Sensing and Robotics 2](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQh_J16IMwDlji18SWQ2PZ6)** — Cyrill Stachniss (Uni Bonn) — sensors and state estimation, including IMU characteristics and sensor fusion
+- **[Kalibr — IMU noise model](https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model)** (ETH Zurich) — practical guide to IMU noise parameter estimation using Allan variance; the reference used by most VIO pipelines
+- **Lasse Klingbeil — Navigation Systems lectures** (IGG, Universität Bonn) — strapdown mechanization, error modeling, and GNSS/INS integration; taught in Bonn, recordings not public
 
 ---
 
 ## Book / Article Resources
 
-- **Strapdown Inertial Navigation Technology** — Titterton & Weston (2004) — the standard reference for strapdown mechanization; covers all coordinate frame equations and error models in detail
-- **Aided Navigation: GPS with High Rate Sensors** — Jay Farrell (2008) — covers error state Kalman filter for INS/GNSS fusion; mathematical treatment is directly implementable
-- **Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems** — Groves (2nd ed., 2013) — comprehensive; covers all integration architectures including tightly coupled and ultra-tight
+- **[Strapdown Inertial Navigation Technology](https://doi.org/10.1049/PBRA017E)** — Titterton & Weston (2004) — the standard reference for strapdown mechanization; covers all coordinate frame equations and error models in detail
+- **[Navigation Using Inertial Sensors](https://discovery.ucl.ac.uk/id/eprint/1470141/)** — Paul Groves (2015), IEEE AESS tutorial — free from UCL Discovery; a compact, self-contained tutorial on the principles before committing to a textbook
+- **Aided Navigation: GPS with High Rate Sensors** — Jay Farrell (2008) — covers the error-state Kalman filter for INS/GNSS fusion; mathematical treatment is directly implementable
+- **Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems** — Groves (2nd ed., 2013), Artech House — comprehensive; covers all integration architectures including tightly coupled and ultra-tight

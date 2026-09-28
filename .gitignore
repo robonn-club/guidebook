@@ -24,12 +24,10 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 
-# MkDocs build output
+# MkDocs build output + privacy-plugin asset cache
 site/
 
 # Build / misc
 *.log
 *.tmp
-
-# MkDocs build output
-site/
+.cache/
