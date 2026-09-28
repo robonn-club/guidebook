@@ -4,6 +4,17 @@ A practitioner-focused guide to mobile robotics, maintained by [Robonn](https://
 
 **[Website](https://robonn-club.github.io/guidebook)**
 
+## New to mobile robotics?
+
+Start with the **[Start Here](https://robonn-club.github.io/guidebook/start-here/)** path: four
+hands-on lessons that take you from "a robot in a hallway" to particle-filter localization, with
+interactive demos and short Python programs in [`examples/`](examples/).
+
+```bash
+pip install -r examples/requirements.txt
+python examples/bayes_filter_1d.py
+```
+
 ## Topics
 
 Math & Probability · Coding · Sensor & Motion Models · State Estimation · Localization · Mapping · Control & Planning · Computer Vision · Inertial Navigation · GNSS · SLAM · Machine Learning

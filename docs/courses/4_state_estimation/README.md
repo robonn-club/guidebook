@@ -35,7 +35,7 @@
 - Measurement model: z_t = C x_t + δ, with δ ~ N(0, Q)
 - Predict: propagate mean and covariance through A
 - Update: compute Kalman gain K, correct mean and covariance from residual (z - Cx)
-- The Kalman gain K is the derived in topic 1 — it decides how much to trust the measurement
+- The Kalman gain K comes from the product of two Gaussians (topic 1) — it decides how much to trust the measurement
 
 **Extended Kalman Filter (EKF)**
 - Nonlinear motion or measurement functions — f(x, u), h(x)
@@ -58,6 +58,16 @@
 - Resample: draw new particle set proportional to weights — eliminates low-weight particles
 - Degeneracy — why naive resampling fails; low-variance resampling as the standard fix
 - Computational cost scales with the number of particles needed to cover the state space
+
+---
+
+## Hands-on
+
+The [Start Here](../../start-here/index.md) path implements every filter on this page in short, tested Python programs:
+[Bayes filter](../../start-here/1-bayes-filter.md) ·
+[Kalman filter](../../start-here/2-kalman-filter.md) ·
+[EKF](../../start-here/3-ekf-localization.md) ·
+[particle filter](../../start-here/4-particle-filter.md).
 
 ---
 

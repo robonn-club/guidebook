@@ -73,7 +73,14 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      base_path: [examples]
+      check_paths: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
@@ -102,10 +109,20 @@ extra_css:
 # accessibility markup when mathjax.js re-runs, nesting every equation twice.
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/demos.js
   - https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js
+
+watch:
+  - examples
 
 nav:
   - Home: index.md
+  - Start Here:
+      - start-here/index.md
+      - "1 · Where am I? The Bayes filter": start-here/1-bayes-filter.md
+      - "2 · The Kalman filter": start-here/2-kalman-filter.md
+      - "3 · Localizing a real robot: the EKF": start-here/3-ekf-localization.md
+      - "4 · The particle filter": start-here/4-particle-filter.md
   - Courses:
       - courses/README.md
       - Math & Probability: courses/1_math_and_probability/README.md
@@ -121,3 +138,4 @@ nav:
       - SLAM: courses/7_slam/README.md
       - Machine Learning: courses/12_machine_learning/README.md
       - C++ for Robotics: courses/13_cpp/README.md
+  - Contribute: CONTRIBUTING.md

@@ -1,0 +1,21 @@
+name: Check links
+
+# Weekly, and on demand: external sites change, and video hosts sometimes
+# throttle checkers, so this reports problems without blocking pull requests.
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-retries 3 --accept 200,429 'docs/**/*.md' 'examples/*.md' README.md
+          fail: true

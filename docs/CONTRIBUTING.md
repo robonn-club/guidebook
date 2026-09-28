@@ -17,7 +17,7 @@ We are not rewriting Probabilistic Robotics. The value here is *curation*: someo
 ### 1. Fork and clone
 
 ```bash
-git clone https://github.com/robonn-club/guidebook.git
+git clone https://github.com/<your-username>/guidebook.git
 cd guidebook
 ```
 
@@ -27,7 +27,7 @@ Check open issues for `help wanted` or `good first contribution` labels, or open
 
 ### 3. Write
 
-- Work inside the relevant course folder under `courses/`.
+- Work inside the relevant course folder under `docs/courses/`.
 - Every resource you add **must be a working link**. An entry without a URL is not useful
   to a reader — it just makes them go and search for it themselves.
 - Point to the exact location: chapter and page range for a book, the specific lecture for
@@ -36,7 +36,7 @@ Check open issues for `help wanted` or `good first contribution` labels, or open
 - Add one sentence saying what that resource gives you that the others don't. This is the
   part a search engine cannot do, and it is the reason this guidebook exists.
 - Prefer the author's or publisher's own copy. Never link pirated PDFs.
-- Use `courses/TEMPLATE.md` as a starting point for new course pages.
+- Use `docs/courses/TEMPLATE.md` as a starting point for new course pages.
 - **If you study MoRo at Bonn, you can contribute something nobody else can.** The
   *At Bonn* boxes state what the module manual says; they cannot say what an exam is
   actually like, what caught people out, or which listed resource was worth the time.
@@ -50,6 +50,16 @@ Check open issues for `help wanted` or `good first contribution` labels, or open
 pip install -r requirements.txt
 mkdocs serve
 # → http://127.0.0.1:8000
+
+# Before opening a PR, run the same check CI runs:
+mkdocs build --strict
+```
+
+If you changed anything in `examples/`, also run the tests:
+
+```bash
+pip install -r examples/requirements.txt pytest
+pytest tests
 ```
 
 ### 5. Open a pull request
@@ -70,6 +80,26 @@ mkdocs serve
 | Link the author's or publisher's own copy, or a DOI / arXiv page | Pirated PDFs, mirrors, and re-uploads |
 | Fix links you find broken or moved | Large reformats without content improvement |
 | Keep *At Bonn* facts traceable to the module manual | Stating exam details from memory |
+
+---
+
+## Lessons with Runnable Code
+
+The [Start Here](start-here/index.md) lessons show how to pair a page with code that is guaranteed to run:
+
+- **Code lives in `examples/`**, one short NumPy-only file per lesson, runnable with `python examples/<name>.py`.
+- **Pages embed the real file**, not a copy. Mark a region in the Python file with
+  `# --8<-- [start:name]` and `# --8<-- [end:name]`, then include it in Markdown with
+  `--8<-- "file.py:name"` inside a code fence. The strict build fails if the file or section is missing.
+- **Numbers quoted on a page are tested.** `tests/test_lesson_pages.py` runs each example and checks
+  that every line of the page's ```` ```text ```` output blocks still appears in the real output; other
+  tests check the hand-worked examples and the statistics quoted in the text. Results of exercises
+  that require changing the code ("What we saw" boxes) are hand-run experiments: re-run them when
+  you change the example they modify.
+- **Figures are generated**, never hand-edited: `pip install matplotlib && python scripts/make_figures.py`
+  writes light and dark SVGs to `docs/start-here/assets/`. Show them with
+  `![alt](assets/name-light.svg#only-light)` and `![alt](assets/name-dark.svg#only-dark)`.
+- **Every source is checked.** Link to the actual video, paper (DOI) or chapter; do not cite from memory.
 
 ---
 
@@ -96,7 +126,7 @@ the entry point in both places.
 ## Links
 
 - Club home: [robonn.de](https://robonn.de)
-- Course overview: [courses/README.md](courses/README.md)
+- Course overview: [Courses](courses/README.md)
 
 ---
 

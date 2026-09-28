@@ -1,0 +1,39 @@
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - page-io
+
+permissions:
+  contents: read
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: pip
+      - run: pip install -r requirements.txt
+      # Strict mode fails on broken links, missing anchors, missing code snippets,
+      # and pages left out of nav
+      - run: mkdocs build --strict
+
+  examples:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -r examples/requirements.txt pytest
+      # The lessons embed these examples and quote their output
+      - run: pytest tests

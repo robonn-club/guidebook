@@ -2,6 +2,10 @@
 
 The curriculum follows the mathematical dependencies of mobile robotics. Each topic assumes the ones listed before it. If you are already comfortable with a topic's prerequisites, you can skip it.
 
+!!! tip "New to mobile robotics?"
+    Do the [Start Here](../start-here/index.md) path first. In four hands-on lessons you build
+    the filters at the heart of topics 4, 5 and 11, and then this map will make much more sense.
+
 ## The "At Bonn" boxes
 
 Universität Bonn runs a dedicated [M.Sc. Mobile Robotics](https://www.moro.uni-bonn.de/)
