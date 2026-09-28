@@ -23,6 +23,9 @@ jobs:
           path: .lycheecache
           key: cache-lychee-${{ github.sha }}
           restore-keys: cache-lychee-
+      # Live-site URLs are skipped: a page added by this PR is not deployed yet,
+      # so its link would 404 until after merge. check.yml's strict build covers
+      # internal links, and the weekly check covers the live site.
       - uses: lycheeverse/lychee-action@v2
         with:
           args: >-
@@ -31,5 +34,6 @@ jobs:
             --max-cache-age 1d
             --max-concurrency 4
             --accept 200,206,429
+            --exclude '^https://robonn-club\.github\.io/guidebook/'
             'docs/**/*.md' 'examples/*.md' 'README.md'
           fail: true
