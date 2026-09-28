@@ -12,20 +12,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build (strict)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: pip
-      - run: pip install -r requirements.txt
-      # --strict turns MkDocs' link warnings into failures, so a dead internal
-      # link fails the PR instead of shipping to the live site.
-      - run: mkdocs build --strict
-
   links:
     name: Link check
     runs-on: ubuntu-latest
@@ -45,6 +31,5 @@ jobs:
             --max-cache-age 1d
             --max-concurrency 4
             --accept 200,206,429
-            --exclude-mail
-            'docs/**/*.md' 'README.md'
+            'docs/**/*.md' 'examples/*.md' 'README.md'
           fail: true

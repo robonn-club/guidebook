@@ -23,8 +23,7 @@ jobs:
             --no-progress
             --max-concurrency 4
             --accept 200,206,429
-            --exclude-mail
-            'docs/**/*.md' 'README.md'
+            'docs/**/*.md' 'examples/*.md' 'README.md'
           fail: false
       - name: Open an issue on failure
         if: steps.lychee.outputs.exit_code != 0
